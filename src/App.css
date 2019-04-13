@@ -31,3 +31,64 @@
     transform: rotate(360deg);
   }
 }
+
+.authorElement {
+  padding: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding-left: 10px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.textbox {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px
+}
+
+.authorsWrapper {
+  width: 100%;
+}
+
+.mainWrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.textboxWrapper {
+  margin: 5px 0px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.addButton {
+  width: 77px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+input:hover {
+  border: 1px solid #02a6c4;
+}
+
+button:hover {
+  border: 1px solid #02a6c4;
+  background-color: #02a6c4;
+  color: white;
+}
+
+body {
+  background-color: #f7f7f7;
+}
