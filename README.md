@@ -9,16 +9,16 @@ Get the endpoint: `https://<appname>.herokuapp.com`
 Create the follwing tables (using console or SQL):
 
 ```sql
-CREATE TABLE public.articles (
-    id serial NOT NULL PRIMARY KEY,
-    author_id integer NOT NULL REFERENCES public.author(id),
-    title text NOT NULL,
-    body text NOT NULL
-);
-
 CREATE TABLE public.authors (
     id serial NOT NULL PRIMARY KEY,
     name text NOT NULL
+);
+
+CREATE TABLE public.articles (
+    id serial NOT NULL PRIMARY KEY,
+    author_id integer NOT NULL REFERENCES public.authors(id),
+    title text NOT NULL,
+    body text NOT NULL
 );
 ```
 
