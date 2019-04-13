@@ -1,4 +1,3 @@
-// Remove the apollo-boost import and change to this:
 import ApolloClient from "apollo-client";
 
 // Setup the network "links"
