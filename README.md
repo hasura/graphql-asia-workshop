@@ -24,6 +24,8 @@ CREATE TABLE public.authors (
 
 Goto Data tab Hasura console and click Track all relations.
 
+Explore the console.
+
 ### Setup a React app
 
 ```bash
@@ -42,6 +44,10 @@ This will open up the app on `http://localhost:8080`
 ```bash
 yarn add apollo-boost apollo-link-ws subscriptions-transport-ws graphql react-apollo
 ```
+
+#### VSCode
+
+Setup Apollo GraphQL extension: https://docs.hasura.io/1.0/graphql/manual/guides/code-editor-integrations/visual-studio-code.html
 
 ### Setup apollo client
 
@@ -100,4 +106,18 @@ export default client;
 
 ```
 
-### 
+### Create Apollo provider
+
+Wrap the App component with ApolloProvider and pass the client to it:
+
+```js
+import client from './apollo';
+import { ApolloProvider } from 'react-apollo';
+
+ReactDOM.render(
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>,
+  document.getElementById('root')
+);
+```
