@@ -57,7 +57,6 @@ Create a file `src/apollo.js` with the following contents:
 import ApolloClient from "apollo-client";
 import { WebSocketLink } from 'apollo-link-ws';
 import { HttpLink } from 'apollo-link-http';
-import { HttpLink } from 'apollo-link-http';
 import { split } from 'apollo-link';
 import { getMainDefinition } from 'apollo-utilities';
 import { InMemoryCache } from 'apollo-cache-inmemory';
